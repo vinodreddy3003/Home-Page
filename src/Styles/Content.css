@@ -1,0 +1,175 @@
+/* Discover, Learn, Succeed with Our Expert-Led Courses */
+       
+.content-head{
+    position: absolute;
+    width: 546px;
+    height: 189px;
+    left: 159px;
+    top: 314px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    color: #000000;
+}
+.content-des{
+position: absolute;
+width: 603px;
+height: 81px;
+left: 155px;
+top: 519px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+color: rgba(0, 0, 0, 0.75);
+}
+.content-img{
+position: absolute;
+width: 448px;
+height: 528px;
+left: 832px;
+top: 216px;
+background: #DEDEDE;
+
+}
+.feature-cou{
+position: absolute;
+width: 288px;
+height: 48px;
+left: 160px;
+top: 976px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #000000;
+ 
+}
+.feature-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2px;
+    gap: 32px;
+    
+    position: absolute;
+    width: 1225px;
+    height: 318px;
+    left: 158px;
+    top: 1040px;
+    overflow-x: scroll;
+    
+
+}
+.feature-content{
+    /* Card */
+
+box-sizing: border-box;
+width: 256px;
+height: 284px;
+background: #FFFFFF;
+border: 1px solid #D2D2D2;
+border-radius: 14px;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.feature-img{
+     /* Frame 18 */
+
+position: absolute;
+width: 240px;
+height: 134px;
+left: 8px;
+top: 8px;
+
+background: #C4C4C4;
+border-radius: 10px;
+
+
+}
+.course-name{
+position: absolute;
+width: 113px;
+height: 33px;
+left: 8px;
+top: 151px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: #000000;
+}
+.feature-author{
+    /* Mark Andrew */
+
+position: absolute;
+width: 78px;
+height: 18px;
+left: 8px;
+top: 188px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.5;
+
+}
+.feature-date{
+    /* Date : 19-10-2024 */
+
+position: absolute;
+width: 137px;
+height: 24px;
+left: 8px;
+top: 210px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.7;
+
+}
+.feature-view{
+    /* Group 6 */
+
+/* view course */
+
+position: absolute;
+width: 103px;
+height: 21px;
+left: 138px;
+top: 251px;
+padding: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+color: #0056D2;
+
+
+
+
+}
+ 
