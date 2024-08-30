@@ -1,0 +1,10 @@
+.main-result{
+    text-align: center;
+}
+.results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Optional: Adjusts spacing between items */
+    align-items: center; /* Optional: Aligns items vertically */
+  }
+  

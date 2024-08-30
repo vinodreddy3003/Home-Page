@@ -12,6 +12,9 @@ const Navbar = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
+        <li>
+          <Link to="/assessment">Assessment</Link>
+        </li>
         <li className="dropdown">
           <Link to="/courses">Courses ▾</Link>
           <ul className="dropdown-menu">
