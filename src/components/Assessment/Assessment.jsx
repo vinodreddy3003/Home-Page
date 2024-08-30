@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Assessment.css";
 import Question from "./Question";
 import AppTimer from "./AppTimer";
 import MainResult from "./MainResult";
 import { useNavigate } from 'react-router-dom';
-const Assessment = ({ questions }) => {
+
+const Assessment = ({ courseName, questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [name, setName] = useState("");
   const navigate = useNavigate();
   const [answerInd, setAnswerInd] = useState(Array(questions.length).fill(null)); // Store selected answers for all questions
   const [results, setResults] = useState(questions.map(() => null));
@@ -20,9 +22,19 @@ const Assessment = ({ questions }) => {
 
   const { question, options, correct_answer } = questions[currentQuestion];
 
+  useEffect(() => {
+    if (courseName === "react") {
+      setName("React JS");
+    }
+     if (courseName === "jsquizz") {
+      setName("JavaScript");
+    }
+  }, [courseName]);
+
   const handleGoBack = () => {
     navigate('/assessment'); // Go back to the previous location
   };
+
   const onAnswerClick = (answer, index) => {
     setAnswerInd((prev) => {
       const updatedAnswers = [...prev];
@@ -36,7 +48,6 @@ const Assessment = ({ questions }) => {
       return updatedResults;
     });
 
-    // Update the selectedAnswers array with the current question and selected option
     setSelectedAnswers((prevSelectedAnswers) => {
       const updatedSelectedAnswers = [...prevSelectedAnswers];
       updatedSelectedAnswers[currentQuestion] = {
@@ -76,6 +87,7 @@ const Assessment = ({ questions }) => {
   const correctAnswers = results.filter((result) => result === true).length;
   const wrongAnswers = results.filter((result) => result === false).length;
 
+  console.log(courseName)
   if (showResult) {
     return (
       <div className="">
@@ -97,7 +109,7 @@ const Assessment = ({ questions }) => {
         <button className="back-button" onClick={handleGoBack}>
       <i className="bi bi-arrow-left-circle-fill"></i>
         </button>
-          <span className="exam-title">ASSESSMENT-1</span>
+          <span className="exam-title">{name} Assessment-1</span>
         </div>
         <div className="header-right">
           <div className="user-profile">

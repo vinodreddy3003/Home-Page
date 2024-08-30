@@ -31,7 +31,7 @@ function AppTimer({ duration, onTimeUp }) {
 
   return (
     <div className="app-timer">
-      <span className="timer-time"><i class="bi bi-stopwatch-fill"></i>{formatTime(duration - counter)}</span>
+      <span className="timer-time"><i className="bi bi-stopwatch-fill"></i>{formatTime(duration - counter)}</span>
       <span className="timer-label">Time Remaining</span>
     </div>
   );

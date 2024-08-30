@@ -32,11 +32,11 @@ const FetchDataComponent = () => {
     return <Loading />;
   }
 
-  console.log(data);
+   
 
   return (
     <div>
-      <Assessment d  questions={data} />
+      <Assessment courseName={courseName} questions={data} />
     </div>
   );
 };
